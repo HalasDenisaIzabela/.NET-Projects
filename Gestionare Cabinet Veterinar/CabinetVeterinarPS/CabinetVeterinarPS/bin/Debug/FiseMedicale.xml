@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<ArrayOfFisaMedicala xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FisaMedicala>
+    <NrCrt>1</NrCrt>
+    <Anim>
+      <Cip>111</Cip>
+      <Specie />
+    </Anim>
+    <Consult>
+      <Simptome>febra</Simptome>
+      <Diagnostic>raceala</Diagnostic>
+      <Tratament>pastile</Tratament>
+      <Medic>222</Medic>
+      <Ora>10</Ora>
+    </Consult>
+  </FisaMedicala>
+  <FisaMedicala>
+    <NrCrt>2</NrCrt>
+    <Anim>
+      <Cip>333</Cip>
+      <Specie />
+    </Anim>
+    <Consult>
+      <Simptome />
+      <Diagnostic />
+      <Tratament />
+      <Medic>222</Medic>
+      <Ziua>marti</Ziua>
+      <Ora>12</Ora>
+    </Consult>
+  </FisaMedicala>
+  <FisaMedicala>
+    <NrCrt>3</NrCrt>
+    <Anim>
+      <Cip>555</Cip>
+      <Specie />
+    </Anim>
+    <Consult>
+      <Simptome />
+      <Diagnostic />
+      <Tratament />
+      <Medic>222</Medic>
+      <Ziua>joi</Ziua>
+      <Ora>15</Ora>
+    </Consult>
+  </FisaMedicala>
+  <FisaMedicala>
+    <NrCrt>4</NrCrt>
+    <Anim>
+      <Cip>666</Cip>
+      <Specie />
+    </Anim>
+    <Consult>
+      <Simptome />
+      <Diagnostic />
+      <Tratament />
+      <Medic>222</Medic>
+      <Ziua>vineri</Ziua>
+      <Ora>14</Ora>
+    </Consult>
+  </FisaMedicala>
+</ArrayOfFisaMedicala>

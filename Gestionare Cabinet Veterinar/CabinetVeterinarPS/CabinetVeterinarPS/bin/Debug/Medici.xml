@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ArrayOfMedic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Medic>
+    <Rol />
+    <Email />
+    <Parola />
+    <Id>222</Id>
+    <Luni>
+      <OraStart>10</OraStart>
+      <OraStop>15</OraStop>
+    </Luni>
+    <Marti>
+      <OraStart>7</OraStart>
+      <OraStop>12</OraStop>
+    </Marti>
+    <Miercuri>
+      <OraStart>9</OraStart>
+      <OraStop>13</OraStop>
+    </Miercuri>
+    <Joi>
+      <OraStart>9</OraStart>
+      <OraStop>10</OraStop>
+    </Joi>
+    <Vineri>
+      <OraStart>9</OraStart>
+      <OraStop>12</OraStop>
+    </Vineri>
+  </Medic>
+  <Medic>
+    <Rol />
+    <Email />
+    <Parola />
+    <Id>888</Id>
+    <Luni>
+      <OraStart>7</OraStart>
+      <OraStop>7</OraStop>
+    </Luni>
+    <Marti>
+      <OraStart>7</OraStart>
+      <OraStop>7</OraStop>
+    </Marti>
+    <Miercuri>
+      <OraStart>7</OraStart>
+      <OraStop>7</OraStop>
+    </Miercuri>
+    <Joi>
+      <OraStart>7</OraStart>
+      <OraStop>7</OraStop>
+    </Joi>
+    <Vineri>
+      <OraStart>7</OraStart>
+      <OraStop>7</OraStop>
+    </Vineri>
+  </Medic>
+</ArrayOfMedic>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfUtilizator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Utilizator>
+    <Rol>admin</Rol>
+    <Email>admin</Email>
+    <Parola>admin</Parola>
+  </Utilizator>
+  <Utilizator>
+    <Rol>asistent</Rol>
+    <Email>asistent</Email>
+    <Parola>asistent</Parola>
+  </Utilizator>
+  <Utilizator>
+    <Rol>dr</Rol>
+    <Email>dr</Email>
+    <Parola>dr</Parola>
+  </Utilizator>
+  <Utilizator>
+    <Rol>dr</Rol>
+    <Email>dr1</Email>
+    <Parola>dr1</Parola>
+  </Utilizator>
+</ArrayOfUtilizator>

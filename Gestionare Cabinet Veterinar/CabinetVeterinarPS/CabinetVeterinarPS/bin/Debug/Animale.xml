@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfAnimal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animal>
+    <Cip>111</Cip>
+    <Specie>canin</Specie>
+  </Animal>
+  <Animal>
+    <Cip>333</Cip>
+    <Specie>felina</Specie>
+  </Animal>
+  <Animal>
+    <Cip>555</Cip>
+    <Specie>rozatoare</Specie>
+  </Animal>
+  <Animal>
+    <Cip>666</Cip>
+    <Specie>pasare</Specie>
+  </Animal>
+</ArrayOfAnimal>

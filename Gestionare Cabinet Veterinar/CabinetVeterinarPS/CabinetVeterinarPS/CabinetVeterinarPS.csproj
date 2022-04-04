@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{345505DB-16EA-405F-852D-8ECCB0E76553}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CabinetVeterinarPS</RootNamespace>
+    <AssemblyName>CabinetVeterinarPS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Animal.cs" />
+    <Compile Include="Model\Consultatie.cs" />
+    <Compile Include="Model\FisaMedicala.cs" />
+    <Compile Include="Model\Medic.cs" />
+    <Compile Include="Model\Orar.cs" />
+    <Compile Include="Model\Persistenta\PersistentaAnimal.cs" />
+    <Compile Include="Model\Persistenta\PersistentaFisaMedicala.cs" />
+    <Compile Include="Model\Persistenta\PersistentaMedic.cs" />
+    <Compile Include="Model\Persistenta\PersistentaUtilizator.cs" />
+    <Compile Include="Model\ProgramZi.cs" />
+    <Compile Include="Model\Utilizator.cs" />
+    <Compile Include="Presenter\PrezenareSalvareListeAnimale.cs" />
+    <Compile Include="Presenter\PrezentareAnimal.cs" />
+    <Compile Include="Presenter\PrezentareFiltrareAnimale.cs" />
+    <Compile Include="Presenter\PrezentareFiltrareAnimaleMedic.cs" />
+    <Compile Include="Presenter\PrezentareFisaMedicala.cs" />
+    <Compile Include="Presenter\PrezentareGestionareFiseMedicaleMedic.cs" />
+    <Compile Include="Presenter\PrezentareMedic.cs" />
+    <Compile Include="Presenter\PrezentareUtilizator.cs" />
+    <Compile Include="View\Admin\IVizualizareAdmin.cs" />
+    <Compile Include="View\Asistent\IVizualizareFiltrareAnimale.cs" />
+    <Compile Include="View\Asistent\IVizualizareGestionareAnimale.cs" />
+    <Compile Include="View\Asistent\IVizualizarePlanificareConsultatii.cs" />
+    <Compile Include="View\Asistent\IVizualizareSalvareListeAnimale.cs" />
+    <Compile Include="View\Asistent\VizualizareAsistent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareAsistent.Designer.cs">
+      <DependentUpon>VizualizareAsistent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareFiltrareAnimale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareFiltrareAnimale.Designer.cs">
+      <DependentUpon>VizualizareFiltrareAnimale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareGestionareAnimale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareGestionareAnimale.Designer.cs">
+      <DependentUpon>VizualizareGestionareAnimale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizarePlanificareCnsultatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizarePlanificareCnsultatii.Designer.cs">
+      <DependentUpon>VizualizarePlanificareCnsultatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareSalvareListeAnimale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Asistent\VizualizareSalvareListeAnimale.Designer.cs">
+      <DependentUpon>VizualizareSalvareListeAnimale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Medic\IVizualizareFiltrareAnimaleMedic.cs" />
+    <Compile Include="View\Medic\IVizualizareGestionareFiseMedicale.cs" />
+    <Compile Include="View\Medic\IVizualizareGestionareProgram.cs" />
+    <Compile Include="View\Medic\VizualizareFiltrareAnimale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareFiltrareAnimale.Designer.cs">
+      <DependentUpon>VizualizareFiltrareAnimale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareGestionareFiseMedicale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareGestionareFiseMedicale.Designer.cs">
+      <DependentUpon>VizualizareGestionareFiseMedicale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareGestionareProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareGestionareProgram.Designer.cs">
+      <DependentUpon>VizualizareGestionareProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Medic\VizualizareMedic.Designer.cs">
+      <DependentUpon>VizualizareMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\VizualizareAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin\VizualizareAdmin.Designer.cs">
+      <DependentUpon>VizualizareAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Autentificare\VizualizareAutentificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Autentificare\VizualizareAutentificare.Designer.cs">
+      <DependentUpon>VizualizareAutentificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Admin\VizualizareAdmin.resx">
+      <DependentUpon>VizualizareAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Asistent\VizualizareAsistent.resx">
+      <DependentUpon>VizualizareAsistent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Asistent\VizualizareFiltrareAnimale.resx">
+      <DependentUpon>VizualizareFiltrareAnimale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Asistent\VizualizareGestionareAnimale.resx">
+      <DependentUpon>VizualizareGestionareAnimale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Asistent\VizualizarePlanificareCnsultatii.resx">
+      <DependentUpon>VizualizarePlanificareCnsultatii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Asistent\VizualizareSalvareListeAnimale.resx">
+      <DependentUpon>VizualizareSalvareListeAnimale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Autentificare\VizualizareAutentificare.resx">
+      <DependentUpon>VizualizareAutentificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Medic\VizualizareFiltrareAnimale.resx">
+      <DependentUpon>VizualizareFiltrareAnimale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Medic\VizualizareGestionareFiseMedicale.resx">
+      <DependentUpon>VizualizareGestionareFiseMedicale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Medic\VizualizareGestionareProgram.resx">
+      <DependentUpon>VizualizareGestionareProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Medic\VizualizareMedic.resx">
+      <DependentUpon>VizualizareMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>
