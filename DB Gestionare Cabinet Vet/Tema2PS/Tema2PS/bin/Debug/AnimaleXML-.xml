@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnimal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animal>
+    <Cip>8</Cip>
+    <Specie>felina</Specie>
+  </Animal>
+  <Animal>
+    <Cip>9</Cip>
+    <Specie>canin</Specie>
+  </Animal>
+  <Animal>
+    <Cip>10</Cip>
+    <Specie>rozatoare</Specie>
+  </Animal>
+  <Animal>
+    <Cip>11</Cip>
+    <Specie>pasare</Specie>
+  </Animal>
+  <Animal>
+    <Cip>12</Cip>
+    <Specie>peste</Specie>
+  </Animal>
+  <Animal>
+    <Cip>13</Cip>
+    <Specie>reptila</Specie>
+  </Animal>
+  <Animal>
+    <Cip>14</Cip>
+    <Specie>paianjen</Specie>
+  </Animal>
+</ArrayOfAnimal>
